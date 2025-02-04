@@ -1,4 +1,4 @@
-def countDigits(n: int) -> int:
+def countDigits(n):
     digits = []
     original = n
     count = 0
@@ -12,4 +12,6 @@ def countDigits(n: int) -> int:
         if digit != 0 and original % digit == 0:
             count+=1
         
-    return count
+    print(count)
+
+countDigits(12)
